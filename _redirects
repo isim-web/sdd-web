@@ -1,0 +1,13 @@
+# ============================================
+# Netlify Redirects — Sonia Dubey Dewan
+# ============================================
+
+# Clean URLs — serve folder/index.html for /folder
+/about              /about/index.html              200
+/expertise          /expertise/index.html          200
+/ideas              /ideas/index.html              200
+/speaking           /speaking/index.html           200
+/work-with-sonia    /work-with-sonia/index.html    200
+
+# 404 — custom error page for any unmatched URL
+/*                  /404.html                      404

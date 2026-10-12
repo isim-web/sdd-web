@@ -1,0 +1,17 @@
+# ============================================
+# robots.txt — Sonia Dubey Dewan
+# ============================================
+
+User-agent: *
+Allow: /
+
+# Block admin / temp paths (nothing yet — placeholder)
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /*.json$
+
+# Crawl delay (good citizen)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://soniadubeydewan.com/sitemap.xml

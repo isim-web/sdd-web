@@ -42,19 +42,66 @@
           <img src="/assets/images/sdd-logo-white.png" alt="Sonia Dubey Dewan" class="brand-logo">
         </a>
 
+        <!-- Desktop nav -->
         <nav class="site-nav" aria-label="Main navigation">
           <ul class="nav-list">
-            <li><a href="/"          class="nav-link">Home</a></li>
-            <li><a href="/about"     class="nav-link">About</a></li>
-            <li><a href="/expertise" class="nav-link">Expertise</a></li>
-            <li><a href="/ideas"     class="nav-link">Ideas</a></li>
-            <li><a href="/speaking"  class="nav-link">Speaking</a></li>
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+
+            <li class="nav-item">
+              <a href="/about" class="nav-link">About Sonia</a>
+              <div class="nav-dropdown">
+                <a href="/about">Journey</a>
+                <a href="/about/credentials">Credentials</a>
+                <a href="/about/awards">Awards &amp; Media</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="/expertise" class="nav-link">Expertise</a>
+              <div class="nav-dropdown">
+                <a href="/expertise/executive-presence">Executive Presence</a>
+                <a href="/expertise/personal-branding">Personal Branding</a>
+                <a href="/expertise/image-management">Image Management</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="/ideas" class="nav-link">Ideas</a>
+              <div class="nav-dropdown">
+                <a href="/ideas/articles">Articles</a>
+                <a href="/ideas/videos">Videos</a>
+                <a href="/ideas/podcasts">Podcasts</a>
+                <a href="/ideas/research">Research</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="/work-with-sonia" class="nav-link">Work With Sonia</a>
+              <div class="nav-dropdown">
+                <a href="/work-with-sonia/advisory">Advisory &amp; Coaching</a>
+                <a href="/work-with-sonia/programs">Leadership Programs</a>
+                <a href="/work-with-sonia/workshops">Workshops &amp; Keynotes</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="/ventures" class="nav-link">Ventures</a>
+              <div class="nav-dropdown">
+                <a href="/ventures/isim-edu">ISIM EDU</a>
+                <a href="/ventures/isim-enterprise">ISIM Enterprise</a>
+                <a href="/ventures/isimx">ISIMx</a>
+                <a href="/ventures/india-presence-summit">India Presence Summit</a>
+                <a href="/ventures/products">Products</a>
+              </div>
+            </li>
           </ul>
-          <a href="/work-with-sonia" class="btn btn-cta nav-cta">Work with Sonia</a>
+
+          <a href="/contact" class="btn btn-cta nav-cta">Contact Me</a>
         </nav>
 
-        <button class="nav-toggle" id="navToggle" type="button"
-                aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+        <!-- Mobile hamburger -->
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false"
+          aria-controls="mnav">
           <span></span>
           <span></span>
         </button>
@@ -85,7 +132,7 @@
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="/" class="breadcrumb-link">Home</a>
         <span class="breadcrumb-sep" aria-hidden="true">/</span>
-        <span class="breadcrumb-current" aria-current="page">About</span>
+        <span class="breadcrumb-current" aria-current="page">About Sonia</span>
       </nav>
 
     </div>
@@ -102,7 +149,48 @@
 
 
   <!-- ============================================
-       MOBILE MENU
+       ABOUT — CONTENT (Hello Sonia)
+       ============================================ -->
+  <section class="about-content reveal">
+    <div class="container">
+      
+      <div class="about-grid">
+        
+        <!-- Text Content -->
+        <div class="about-text">
+          <span class="about-tag">Hello, I am Sonia</span>
+          
+          <h1 class="about-title">
+            A quiet force for<br>
+            <em>transformative</em> leadership.
+          </h1>
+          
+          <p class="about-desc">
+            For over 16 years, I have worked at the intersection of image, behaviour, and communication. I believe that true executive presence is not about performing a role, but about aligning how you look, sound, and act with the leader you are becoming.
+          </p>
+          
+          <p class="about-desc">
+            Dubbed a "Fairy Godmother of Transformation" by the media, my work is rooted in a simple truth: the higher the position, the less the title can do the work for you. I help leaders and teams build the quiet authority required to command any room.
+          </p>
+          
+          <a href="/contact" class="btn btn-cta" style="margin-top: 20px;">Work With Me</a>
+        </div>
+
+        <!-- Portrait -->
+        <div class="about-visual">
+          <div class="about-image-wrap">
+            <img src="/assets/images/faculty-sonia-dubey-2.webp" alt="Sonia Dubey Dewan" class="about-image">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       MOBILE MENU — FLOATING GLASS CARD
        ============================================ -->
   <div class="mnav" id="mnav" aria-hidden="true">
     <div class="mnav-backdrop" data-close></div>
@@ -120,20 +208,206 @@
       </div>
 
       <ul class="mnav-list">
-        <li><a href="/"          class="mnav-link"><i>01</i>Home</a></li>
-        <li><a href="/about"     class="mnav-link"><i>02</i>About</a></li>
-        <li><a href="/expertise" class="mnav-link"><i>03</i>Expertise</a></li>
-        <li><a href="/ideas"     class="mnav-link"><i>04</i>Ideas</a></li>
-        <li><a href="/speaking"  class="mnav-link"><i>05</i>Speaking</a></li>
+        <li><a href="/" class="mnav-link"><i>01</i>Home</a></li>
+        
+        <li class="mnav-item-parent">
+          <div class="mnav-link-row">
+            <a href="/about" class="mnav-link">
+              <i>02</i>About Sonia
+            </a>
+            <button class="mnav-toggle-icon" aria-label="Toggle submenu">+</button>
+          </div>
+          <ul class="mnav-sub-list">
+            <li><a href="/about">Journey</a></li>
+            <li><a href="/about/credentials">Credentials</a></li>
+            <li><a href="/about/awards">Awards &amp; Media</a></li>
+          </ul>
+        </li>
+
+        <li class="mnav-item-parent">
+          <div class="mnav-link-row">
+            <a href="/expertise" class="mnav-link">
+              <i>03</i>Expertise
+            </a>
+            <button class="mnav-toggle-icon" aria-label="Toggle submenu">+</button>
+          </div>
+          <ul class="mnav-sub-list">
+            <li><a href="/expertise/executive-presence">Executive Presence</a></li>
+            <li><a href="/expertise/personal-branding">Personal Branding</a></li>
+            <li><a href="/expertise/image-management">Image Management</a></li>
+          </ul>
+        </li>
+
+        <li class="mnav-item-parent">
+          <div class="mnav-link-row">
+            <a href="/ideas" class="mnav-link">
+              <i>04</i>Ideas
+            </a>
+            <button class="mnav-toggle-icon" aria-label="Toggle submenu">+</button>
+          </div>
+          <ul class="mnav-sub-list">
+            <li><a href="/ideas/articles">Articles</a></li>
+            <li><a href="/ideas/videos">Videos</a></li>
+            <li><a href="/ideas/podcasts">Podcasts</a></li>
+            <li><a href="/ideas/research">Research</a></li>
+          </ul>
+        </li>
+
+        <li class="mnav-item-parent">
+          <div class="mnav-link-row">
+            <a href="/work-with-sonia" class="mnav-link">
+              <i>05</i>Work With Sonia
+            </a>
+            <button class="mnav-toggle-icon" aria-label="Toggle submenu">+</button>
+          </div>
+          <ul class="mnav-sub-list">
+            <li><a href="/work-with-sonia/advisory">Advisory &amp; Coaching</a></li>
+            <li><a href="/work-with-sonia/programs">Leadership Programs</a></li>
+            <li><a href="/work-with-sonia/workshops">Workshops &amp; Keynotes</a></li>
+          </ul>
+        </li>
+
+        <li class="mnav-item-parent">
+          <div class="mnav-link-row">
+            <a href="/ventures" class="mnav-link">
+              <i>06</i>Ventures
+            </a>
+            <button class="mnav-toggle-icon" aria-label="Toggle submenu">+</button>
+          </div>
+          <ul class="mnav-sub-list">
+            <li><a href="https://isim.edu" target="_blank" rel="noopener">ISIM EDU ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener">ISIM Enterprise ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener">ISIMx ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener">India Presence Summit ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Products ↗</a></li>
+          </ul>
+        </li>
       </ul>
 
-      <a href="/work-with-sonia" class="btn btn-cta mnav-cta">Work with Sonia</a>
+      <a href="/contact" class="btn btn-cta mnav-cta" style="margin-top: 20px;">Contact Me</a>
 
       <p class="mnav-meta">hello@soniadubeydewan.com</p>
 
     </aside>
   </div>
 
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <!-- TOP: 4 columns -->
+      <div class="footer-grid">
+
+        <!-- Brand + Newsletter -->
+        <div class="footer-brand-col">
+
+          <a href="/" class="footer-brand" aria-label="Sonia Dubey Dewan — Home">
+            <img src="/assets/images/sdd-logo-white.png" alt="Sonia Dubey Dewan" class="footer-logo">
+          </a>
+
+          <p class="footer-tagline">
+            Presence shaped for the rooms that matter —
+            through appearance, behaviour, communication
+            and influence.
+          </p>
+
+          <!-- Newsletter mini -->
+          <form class="footer-news" action="#" method="post" novalidate>
+            <label for="footer-email" class="footer-news-label">
+              Presence Notes — a quiet letter, occasionally.
+            </label>
+            <div class="footer-news-row">
+              <input id="footer-email" name="email" type="email" class="footer-news-input" placeholder="your@email.com"
+                autocomplete="email" required>
+              <button type="submit" class="footer-news-btn" aria-label="Subscribe">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </form>
+
+        </div>
+
+        <!-- Explore & Work -->
+        <nav class="footer-col" aria-label="Explore & Work">
+          <h3 class="footer-heading">Explore &amp; Work</h3>
+          <ul class="footer-list">
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="/about" class="footer-link">About Sonia</a></li>
+            <li><a href="/expertise" class="footer-link">Expertise</a></li>
+            <li><a href="/ideas" class="footer-link">Ideas</a></li>
+            <li><a href="/work-with-sonia" class="footer-link">Work With Sonia</a></li>
+          </ul>
+        </nav>
+
+        <!-- Ventures (External Links) -->
+        <nav class="footer-col" aria-label="Ventures">
+          <h3 class="footer-heading">Ventures</h3>
+          <ul class="footer-list">
+            <!-- UPDATE the # with the actual external URLs -->
+            <li><a href="#" target="_blank" rel="noopener" class="footer-link">ISIM EDU ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="footer-link">ISIM Enterprise ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="footer-link">ISIMx ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="footer-link">India Presence Summit ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="footer-link">Products ↗</a></li>
+          </ul>
+        </nav>
+
+        <!-- Connect & Legal -->
+        <nav class="footer-col" aria-label="Connect">
+          <h3 class="footer-heading">Connect</h3>
+          <ul class="footer-list">
+            <li>
+              <a href="/contact" class="footer-link" style="color: var(--accent); font-weight: 600;">Contact Me</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/soniadubeydewan/" target="_blank" rel="noopener" class="footer-link">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/soniadubeydewan" target="_blank" rel="noopener" class="footer-link">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hello@soniadubeydewan.com" class="footer-link">
+                hello@soniadubeydewan.com
+              </a>
+            </li>
+
+            <!-- Legal Links moved here to save space -->
+            <li style="margin-top: 12px;">
+              <a href="/privacy" class="footer-link" style="font-size: 0.75rem; opacity: 0.5;">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/terms" class="footer-link" style="font-size: 0.75rem; opacity: 0.5;">Terms of Use</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <!-- BOTTOM: copyright -->
+      <div class="footer-bottom">
+
+        <p class="footer-copy">
+          &copy; 2026 Sonia Dubey Dewan. All rights reserved.
+        </p>
+
+        <p class="footer-credit">
+          Made with care · <span class="footer-credit-dot">●</span> Est. 2010
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
 
   <script src="/js/main.js"></script>
 </body>

@@ -96,18 +96,63 @@
           <!-- Desktop nav -->
           <nav class="site-nav" aria-label="Main navigation">
             <ul class="nav-list">
-              <li><a href="/"           class="nav-link">Home</a></li>
-              <li><a href="/about"      class="nav-link">About</a></li>
-              <li><a href="/expertise"  class="nav-link">Expertise</a></li>
-              <li><a href="/ideas"      class="nav-link">Ideas</a></li>
-              <li><a href="/speaking"   class="nav-link">Speaking</a></li>
+              <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+
+              <li class="nav-item">
+                <a href="/about" class="nav-link">About Sonia</a>
+                <div class="nav-dropdown">
+                  <a href="/about">Journey</a>
+                  <a href="/about/credentials">Credentials</a>
+                  <a href="/about/awards">Awards &amp; Media</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="/expertise" class="nav-link">Expertise</a>
+                <div class="nav-dropdown">
+                  <a href="/expertise/executive-presence">Executive Presence</a>
+                  <a href="/expertise/personal-branding">Personal Branding</a>
+                  <a href="/expertise/image-management">Image Management</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="/ideas" class="nav-link">Ideas</a>
+                <div class="nav-dropdown">
+                  <a href="/ideas/articles">Articles</a>
+                  <a href="/ideas/videos">Videos</a>
+                  <a href="/ideas/podcasts">Podcasts</a>
+                  <a href="/ideas/research">Research</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="/work-with-sonia" class="nav-link">Work With Sonia</a>
+                <div class="nav-dropdown">
+                  <a href="/work-with-sonia/advisory">Advisory &amp; Coaching</a>
+                  <a href="/work-with-sonia/programs">Leadership Programs</a>
+                  <a href="/work-with-sonia/workshops">Workshops &amp; Keynotes</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="/ventures" class="nav-link">Ventures</a>
+                <div class="nav-dropdown">
+                  <a href="/ventures/isim-edu">ISIM EDU</a>
+                  <a href="/ventures/isim-enterprise">ISIM Enterprise</a>
+                  <a href="/ventures/isimx">ISIMx</a>
+                  <a href="/ventures/india-presence-summit">India Presence Summit</a>
+                  <a href="/ventures/products">Products</a>
+                </div>
+              </li>
             </ul>
-            <a href="/work-with-sonia" class="btn btn-cta nav-cta">Work with Sonia</a>
+
+            <a href="/contact" class="btn btn-cta nav-cta">Contact Me</a>
           </nav>
 
           <!-- Mobile hamburger -->
-          <button class="nav-toggle" id="navToggle" type="button"
-                  aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+          <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false"
+            aria-controls="mnav">
             <span></span>
             <span></span>
           </button>
@@ -137,8 +182,8 @@
         </ul>
 
         <div class="hero-actions">
-          <a href="/work-with-sonia" class="btn btn-cta">Work with Sonia</a>
-          <a href="/ideas"           class="btn btn-outline">Explore Ideas</a>
+          <a href="/contact" class="btn btn-cta">Contact Me</a>
+          <a href="/ideas" class="btn btn-outline">Explore Ideas</a>
         </div>
 
       </div>
@@ -165,21 +210,131 @@
         </button>
       </div>
 
-      <ul class="mnav-list">
-        <li><a href="/"           class="mnav-link"><i>01</i>Home</a></li>
-        <li><a href="/about"      class="mnav-link"><i>02</i>About</a></li>
-        <li><a href="/expertise"  class="mnav-link"><i>03</i>Expertise</a></li>
-        <li><a href="/ideas"      class="mnav-link"><i>04</i>Ideas</a></li>
-        <li><a href="/speaking"   class="mnav-link"><i>05</i>Speaking</a></li>
+           <ul class="mnav-list">
+        <li><a href="/" class="mnav-link"><i>01</i>Home</a></li>
+        
+        <li class="mnav-item-parent">
+          <div class="mnav-link-row">
+            <a href="/about" class="mnav-link">
+              <i>02</i>About Sonia
+            </a>
+            <button class="mnav-toggle-icon" aria-label="Toggle submenu">+</button>
+          </div>
+          <ul class="mnav-sub-list">
+            <li><a href="/about">Journey</a></li>
+            <li><a href="/about/credentials">Credentials</a></li>
+            <li><a href="/about/awards">Awards &amp; Media</a></li>
+          </ul>
+        </li>
+
+        <li class="mnav-item-parent">
+          <div class="mnav-link-row">
+            <a href="/expertise" class="mnav-link">
+              <i>03</i>Expertise
+            </a>
+            <button class="mnav-toggle-icon" aria-label="Toggle submenu">+</button>
+          </div>
+          <ul class="mnav-sub-list">
+            <li><a href="/expertise/executive-presence">Executive Presence</a></li>
+            <li><a href="/expertise/personal-branding">Personal Branding</a></li>
+            <li><a href="/expertise/image-management">Image Management</a></li>
+          </ul>
+        </li>
+
+        <li class="mnav-item-parent">
+          <div class="mnav-link-row">
+            <a href="/ideas" class="mnav-link">
+              <i>04</i>Ideas
+            </a>
+            <button class="mnav-toggle-icon" aria-label="Toggle submenu">+</button>
+          </div>
+          <ul class="mnav-sub-list">
+            <li><a href="/ideas/articles">Articles</a></li>
+            <li><a href="/ideas/videos">Videos</a></li>
+            <li><a href="/ideas/podcasts">Podcasts</a></li>
+            <li><a href="/ideas/research">Research</a></li>
+          </ul>
+        </li>
+
+        <li class="mnav-item-parent">
+          <div class="mnav-link-row">
+            <a href="/work-with-sonia" class="mnav-link">
+              <i>05</i>Work With Sonia
+            </a>
+            <button class="mnav-toggle-icon" aria-label="Toggle submenu">+</button>
+          </div>
+          <ul class="mnav-sub-list">
+            <li><a href="/work-with-sonia/advisory">Advisory &amp; Coaching</a></li>
+            <li><a href="/work-with-sonia/programs">Leadership Programs</a></li>
+            <li><a href="/work-with-sonia/workshops">Workshops &amp; Keynotes</a></li>
+          </ul>
+        </li>
+
+        <li class="mnav-item-parent">
+          <div class="mnav-link-row">
+            <a href="/ventures" class="mnav-link">
+              <i>06</i>Ventures
+            </a>
+            <button class="mnav-toggle-icon" aria-label="Toggle submenu">+</button>
+          </div>
+          <ul class="mnav-sub-list">
+            <li><a href="https://isim.edu" target="_blank" rel="noopener">ISIM EDU ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener">ISIM Enterprise ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener">ISIMx ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener">India Presence Summit ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Products ↗</a></li>
+          </ul>
+        </li>
       </ul>
 
-      <a href="/work-with-sonia" class="btn btn-cta mnav-cta">Work with Sonia</a>
+
+      <a href="/contact" class="btn btn-cta mnav-cta" style="margin-top: 20px;">Contact Me</a>
 
       <p class="mnav-meta">hello@soniadubeydewan.com</p>
 
     </aside>
   </div>
 
+
+      <!-- ============================================
+       FEATURE VIDEO SECTION — EDITORIAL
+       ============================================ -->
+  <section class="feature-video reveal">
+    <div class="container">
+      
+      <!-- Editorial Header matching the Services section -->
+      <header class="video-header">
+        <p class="video-kicker">The Presence Film</p>
+        <h2 class="video-title">
+          Leadership,<br>
+          in <em>motion.</em>
+        </h2>
+      </header>
+
+      <!-- Video -->
+      <div class="video-wrapper">
+        <video 
+          id="featureVideo"
+          class="feature-video-player" 
+          src="https://dsta0hk8oxfi7.cloudfront.net/testimonial/promo-video/promo-ttt-video.m3u8" 
+          poster="/assets/images/faculty-sonia-dubey-2.webp"
+          controls 
+          playsinline
+          preload="none">
+        </video>
+        
+        <div class="video-play-overlay" id="videoPlayOverlay">
+          <button class="video-play-btn" aria-label="Play Video">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
+          <span class="video-play-text">Watch the film</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ============================================
        LEADERSHIP STATEMENT — WATERMARK
@@ -211,6 +366,7 @@
 
     </div>
   </section>
+
 
 
   <!-- ============================================
@@ -372,7 +528,7 @@
   </section>
 
 
-    <!-- ============================================
+  <!-- ============================================
        SERVICES — EDITORIAL 3D GRID
        ============================================ -->
   <section class="services reveal">
@@ -478,7 +634,7 @@
     </div>
   </section>
 
-    <!-- ============================================
+  <!-- ============================================
        TESTIMONIALS — SIGNATURE WALL
        ============================================ -->
   <section class="testimonials reveal">
@@ -585,7 +741,7 @@
   </section>
 
 
-    <!-- ============================================
+  <!-- ============================================
        FINAL CTA — WORK WITH SONIA
        ============================================ -->
   <section class="cta reveal">
@@ -594,9 +750,7 @@
       <!-- LEFT: Portrait -->
       <div class="cta-visual">
         <div class="cta-image-wrap">
-          <img src="/assets/images/faculty-sonia-dubey-2.webp"
-               alt="Sonia Dubey Dewan"
-               class="cta-image">
+          <img src="/assets/images/faculty-sonia-dubey-2.webp" alt="Sonia Dubey Dewan" class="cta-image">
           <span class="cta-frame" aria-hidden="true"></span>
         </div>
       </div>
@@ -640,7 +794,7 @@
     </div>
   </section>
 
-    <!-- ============================================
+  <!-- ============================================
        REELS — INSTAGRAM
        ============================================ -->
   <section class="reels reveal">
@@ -667,13 +821,14 @@
       <div class="reels-grid">
 
         <!-- Reel 1 -->
-        <a class="reel-card" href="https://www.instagram.com/reel/DI1f3qeTfLn/?stkn=b3YxYXF6bjZyazFr" target="_blank" rel="noopener">
+        <a class="reel-card" href="https://www.instagram.com/reel/DI1f3qeTfLn/?stkn=b3YxYXF6bjZyazFr" target="_blank"
+          rel="noopener">
           <div class="reel-thumb">
             <img src="/assets/images/reel-1.jpg" alt="Reel — Executive Presence">
             <span class="reel-time" aria-hidden="true">0:45</span>
             <span class="reel-play" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                <path d="M8 5v14l11-7z"/>
+                <path d="M8 5v14l11-7z" />
               </svg>
             </span>
           </div>
@@ -691,7 +846,7 @@
             <span class="reel-time" aria-hidden="true">1:12</span>
             <span class="reel-play" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                <path d="M8 5v14l11-7z"/>
+                <path d="M8 5v14l11-7z" />
               </svg>
             </span>
           </div>
@@ -709,7 +864,7 @@
             <span class="reel-time" aria-hidden="true">0:38</span>
             <span class="reel-play" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                <path d="M8 5v14l11-7z"/>
+                <path d="M8 5v14l11-7z" />
               </svg>
             </span>
           </div>
@@ -723,14 +878,10 @@
       </div>
 
       <div class="reels-cta">
-        <a href="https://www.instagram.com/soniadubeydewan/"
-           target="_blank" rel="noopener"
-           class="btn btn-cta">
+        <a href="https://www.instagram.com/soniadubeydewan/" target="_blank" rel="noopener" class="btn btn-cta">
           Follow on Instagram
         </a>
-        <a href="https://www.instagram.com/soniadubeydewan/"
-           target="_blank" rel="noopener"
-           class="reels-see-more">
+        <a href="https://www.instagram.com/soniadubeydewan/" target="_blank" rel="noopener" class="reels-see-more">
           See more reels →
         </a>
       </div>
@@ -739,7 +890,7 @@
   </section>
 
 
-    <!-- ============================================
+  <!-- ============================================
        FOOTER
        ============================================ -->
   <footer class="site-footer">
@@ -752,9 +903,7 @@
         <div class="footer-brand-col">
 
           <a href="/" class="footer-brand" aria-label="Sonia Dubey Dewan — Home">
-            <img src="/assets/images/sdd-logo-white.png"
-                 alt="Sonia Dubey Dewan"
-                 class="footer-logo">
+            <img src="/assets/images/sdd-logo-white.png" alt="Sonia Dubey Dewan" class="footer-logo">
           </a>
 
           <p class="footer-tagline">
@@ -769,17 +918,12 @@
               Presence Notes — a quiet letter, occasionally.
             </label>
             <div class="footer-news-row">
-              <input
-                id="footer-email"
-                name="email"
-                type="email"
-                class="footer-news-input"
-                placeholder="your@email.com"
-                autocomplete="email"
-                required>
+              <input id="footer-email" name="email" type="email" class="footer-news-input" placeholder="your@email.com"
+                autocomplete="email" required>
               <button type="submit" class="footer-news-btn" aria-label="Subscribe">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
-                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </button>
             </div>
@@ -787,53 +931,61 @@
 
         </div>
 
-        <!-- Explore -->
-        <nav class="footer-col" aria-label="Explore">
-          <h3 class="footer-heading">Explore</h3>
+        <!-- Explore & Work -->
+        <nav class="footer-col" aria-label="Explore & Work">
+          <h3 class="footer-heading">Explore &amp; Work</h3>
           <ul class="footer-list">
-            <li><a href="/"                class="footer-link">Home</a></li>
-            <li><a href="/about"           class="footer-link">About</a></li>
-            <li><a href="/expertise"       class="footer-link">Expertise</a></li>
-            <li><a href="/ideas"           class="footer-link">Ideas</a></li>
-            <li><a href="/speaking"        class="footer-link">Speaking</a></li>
-            <li><a href="/work-with-sonia" class="footer-link">Work with Sonia</a></li>
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="/about" class="footer-link">About Sonia</a></li>
+            <li><a href="/expertise" class="footer-link">Expertise</a></li>
+            <li><a href="/ideas" class="footer-link">Ideas</a></li>
+            <li><a href="/work-with-sonia" class="footer-link">Work With Sonia</a></li>
           </ul>
         </nav>
 
-        <!-- Connect -->
+        <!-- Ventures (External Links) -->
+        <nav class="footer-col" aria-label="Ventures">
+          <h3 class="footer-heading">Ventures</h3>
+          <ul class="footer-list">
+            <!-- UPDATE the # with the actual external URLs -->
+            <li><a href="#" target="_blank" rel="noopener" class="footer-link">ISIM EDU ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="footer-link">ISIM Enterprise ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="footer-link">ISIMx ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="footer-link">India Presence Summit ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener" class="footer-link">Products ↗</a></li>
+          </ul>
+        </nav>
+
+        <!-- Connect & Legal -->
         <nav class="footer-col" aria-label="Connect">
           <h3 class="footer-heading">Connect</h3>
           <ul class="footer-list">
             <li>
-              <a href="https://www.instagram.com/soniadubeydewan/"
-                 target="_blank" rel="noopener"
-                 class="footer-link">
+              <a href="/contact" class="footer-link" style="color: var(--accent); font-weight: 600;">Contact Me</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/soniadubeydewan/" target="_blank" rel="noopener" class="footer-link">
                 Instagram
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/soniadubeydewan"
-                 target="_blank" rel="noopener"
-                 class="footer-link">
+              <a href="https://www.linkedin.com/in/soniadubeydewan" target="_blank" rel="noopener" class="footer-link">
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="mailto:hello@soniadubeydewan.com"
-                 class="footer-link">
+              <a href="mailto:hello@soniadubeydewan.com" class="footer-link">
                 hello@soniadubeydewan.com
               </a>
             </li>
-          </ul>
-        </nav>
 
-        <!-- Legal -->
-        <nav class="footer-col" aria-label="Legal">
-          <h3 class="footer-heading">Legal</h3>
-          <ul class="footer-list">
-            <li><a href="/privacy" class="footer-link">Privacy</a></li>
-            <li><a href="/terms"   class="footer-link">Terms</a></li>
-            <li><a href="/cookies" class="footer-link">Cookies</a></li>
+            <!-- Legal Links moved here to save space -->
+            <li style="margin-top: 12px;">
+              <a href="/privacy" class="footer-link" style="font-size: 0.75rem; opacity: 0.5;">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/terms" class="footer-link" style="font-size: 0.75rem; opacity: 0.5;">Terms of Use</a>
+            </li>
           </ul>
         </nav>
 

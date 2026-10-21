@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ============================================================
-     MOBILE MENU — .mnav structure
+     MOBILE MENU — OPEN/CLOSE
      ============================================================ */
   const toggle = document.getElementById("navToggle");
   const mnav   = document.getElementById("mnav");
 
   if (toggle && mnav) {
-
     const openMenu = () => {
       mnav.classList.add("is-open");
       mnav.setAttribute("aria-hidden", "false");
@@ -27,30 +26,55 @@ document.addEventListener("DOMContentLoaded", () => {
       mnav.classList.contains("is-open") ? closeMenu() : openMenu();
     });
 
-    /* close on any [data-close] element */
     mnav.querySelectorAll("[data-close]").forEach((el) => {
       el.addEventListener("click", closeMenu);
     });
 
-    /* close on link tap */
-    mnav.querySelectorAll(".mnav-link").forEach((link) => {
+    // Close on link tap
+    mnav.querySelectorAll(".mnav-link:not(.has-sub)").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+    
+    // Close if clicking a sub-link
+    mnav.querySelectorAll(".mnav-sub-list a").forEach((link) => {
       link.addEventListener("click", closeMenu);
     });
 
-    /* Escape */
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && mnav.classList.contains("is-open")) {
         closeMenu();
       }
     });
 
-    /* resize to desktop */
     window.addEventListener("resize", () => {
       if (window.innerWidth > 900 && mnav.classList.contains("is-open")) {
         closeMenu();
       }
     });
   }
+
+    /* ============================================================
+     MOBILE SUB-MENU TOGGLE
+     ============================================================ */
+  const dropdownButtons = document.querySelectorAll('.mnav-toggle-icon');
+
+  dropdownButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault(); 
+      e.stopPropagation(); 
+      
+      const parentItem = button.closest('.mnav-item-parent');
+      
+      // Close others
+      document.querySelectorAll('.mnav-item-parent').forEach(item => {
+        if (item !== parentItem) item.classList.remove('is-active');
+      });
+      
+      // Toggle current
+      parentItem.classList.toggle('is-active');
+    });
+  });
+
 
   /* ============================================================
      SCROLL REVEAL
@@ -78,15 +102,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("is-loaded");
   }
 
-
-    /* ============================================================
-     TESTIMONIALS SIGNATURE WALL — duplicate cards for seamless loop
+  /* ============================================================
+     TESTIMONIALS SIGNATURE WALL
      ============================================================ */
   (function () {
     const track = document.getElementById("signatureTrack");
     if (!track) return;
 
-    /* Duplicate all cards once, so the marquee loops smoothly */
     const originalCards = Array.from(track.children);
     originalCards.forEach((card) => {
       const clone = card.cloneNode(true);
@@ -94,5 +116,38 @@ document.addEventListener("DOMContentLoaded", () => {
       track.appendChild(clone);
     });
   })();
+
+
+    /* ============================================================
+     FEATURE VIDEO PLAYER
+     ============================================================ */
+  const videoWrapper = document.querySelector('.video-wrapper');
+  const videoPlayer = document.getElementById('featureVideo');
+  const videoOverlay = document.getElementById('videoPlayOverlay');
+
+  if (videoWrapper && videoPlayer && videoOverlay) {
+    // Click overlay to play
+    videoOverlay.addEventListener('click', () => {
+      videoWrapper.classList.add('is-playing');
+      videoPlayer.play();
+    });
+
+    // Click video to play/pause
+    videoPlayer.addEventListener('click', () => {
+      if (videoPlayer.paused) {
+        videoWrapper.classList.add('is-playing');
+        videoPlayer.play();
+      } else {
+        videoPlayer.pause();
+      }
+    });
+
+    // Pause event shows the overlay again (if they used native controls)
+    videoPlayer.addEventListener('pause', () => {
+      if (!videoPlayer.ended) {
+        videoWrapper.classList.remove('is-playing');
+      }
+    });
+  }
 
 });

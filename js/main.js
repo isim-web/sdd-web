@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       el.addEventListener("click", closeMenu);
     });
 
-    // Close on link tap
+    // Close on link tap (excluding sub-menu parents)
     mnav.querySelectorAll(".mnav-link:not(.has-sub)").forEach((link) => {
       link.addEventListener("click", closeMenu);
     });
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // --- NEW FIX: Close menu when navigating back to the page ---
+    // Close menu when navigating back to the page
     window.addEventListener("pageshow", () => {
       closeMenu();
     });
@@ -84,7 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
       parentItem.classList.toggle('is-active');
     });
   });
-
 
   /* ============================================================
      SCROLL REVEAL
@@ -126,7 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
       track.appendChild(clone);
     });
   })();
-
 
   /* ============================================================
      FEATURE VIDEO PLAYER

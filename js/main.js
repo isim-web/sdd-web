@@ -19,6 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
       mnav.setAttribute("aria-hidden", "true");
       toggle.setAttribute("aria-expanded", "false");
       document.body.style.overflow = "";
+      
+      // Also close all dropdowns when the menu closes
+      document.querySelectorAll('.mnav-item-parent').forEach(item => {
+        item.classList.remove('is-active');
+      });
     };
 
     toggle.addEventListener("click", (e) => {
@@ -51,9 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
         closeMenu();
       }
     });
+
+    // --- NEW FIX: Close menu when navigating back to the page ---
+    window.addEventListener("pageshow", () => {
+      closeMenu();
+    });
   }
 
-    /* ============================================================
+  /* ============================================================
      MOBILE SUB-MENU TOGGLE
      ============================================================ */
   const dropdownButtons = document.querySelectorAll('.mnav-toggle-icon');
@@ -118,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })();
 
 
-    /* ============================================================
+  /* ============================================================
      FEATURE VIDEO PLAYER
      ============================================================ */
   const videoWrapper = document.querySelector('.video-wrapper');

@@ -71,7 +71,7 @@
   }
   </script>
 
- <link rel="stylesheet" href="/css/style.css?v=3">
+ <link rel="stylesheet" href="/css/style.css?v=4">
 </head>
 
 <body>
@@ -307,9 +307,9 @@
        FEATURE VIDEO SECTION — EDITORIAL
        ============================================ -->
   <section class="feature-video reveal">
+    
+    <!-- Header stays contained -->
     <div class="container">
-      
-      <!-- Editorial Header matching the Services section -->
       <header class="video-header">
         <p class="video-kicker">The Presence Film</p>
         <h2 class="video-title">
@@ -317,30 +317,30 @@
           in <em>motion.</em>
         </h2>
       </header>
-
-      <!-- Video -->
-      <div class="video-wrapper">
-        <video 
-          id="featureVideo"
-          class="feature-video-player" 
-          src="https://dsta0hk8oxfi7.cloudfront.net/testimonial/promo-video/promo-ttt-video.m3u8" 
-          poster="/assets/images/faculty-sonia-dubey-2.webp"
-          controls 
-          playsinline
-          preload="none">
-        </video>
-        
-        <div class="video-play-overlay" id="videoPlayOverlay">
-          <button class="video-play-btn" aria-label="Play Video">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M8 5v14l11-7z"/>
-            </svg>
-          </button>
-          <span class="video-play-text">Watch the film</span>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Video breaks out to full width -->
+    <div class="video-wrapper">
+      <video 
+        id="featureVideo"
+        class="feature-video-player" 
+        src="https://dsta0hk8oxfi7.cloudfront.net/testimonial/promo-video/promo-ttt-video.m3u8" 
+        poster="/assets/images/faculty-sonia-dubey-2.webp"
+        controls 
+        playsinline
+        preload="none">
+      </video>
+      
+      <div class="video-play-overlay" id="videoPlayOverlay">
+        <button class="video-play-btn" aria-label="Play Video">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </button>
+        <span class="video-play-text">Watch the film</span>
+      </div>
+    </div>
+
   </section>
 
   <!-- ============================================
@@ -896,17 +896,16 @@
     </div>
   </section>
 
-
   <!-- ============================================
        FOOTER
        ============================================ -->
   <footer class="site-footer">
     <div class="container footer-inner">
 
-      <!-- TOP: 4 columns -->
+      <!-- TOP: 3 columns -->
       <div class="footer-grid">
 
-        <!-- Brand + Newsletter -->
+        <!-- Brand -->
         <div class="footer-brand-col">
 
           <a href="/" class="footer-brand" aria-label="Sonia Dubey Dewan — Home">
@@ -918,23 +917,6 @@
             through appearance, behaviour, communication
             and influence.
           </p>
-
-          <!-- Newsletter mini -->
-          <form class="footer-news" action="#" method="post" novalidate>
-            <label for="footer-email" class="footer-news-label">
-              Presence Notes — a quiet letter, occasionally.
-            </label>
-            <div class="footer-news-row">
-              <input id="footer-email" name="email" type="email" class="footer-news-input" placeholder="your@email.com"
-                autocomplete="email" required>
-              <button type="submit" class="footer-news-btn" aria-label="Subscribe">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
-                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-          </form>
 
         </div>
 
@@ -954,7 +936,6 @@
         <nav class="footer-col" aria-label="Ventures">
           <h3 class="footer-heading">Ventures</h3>
           <ul class="footer-list">
-            <!-- UPDATE the # with the actual external URLs -->
             <li><a href="#" target="_blank" rel="noopener" class="footer-link">ISIM EDU ↗</a></li>
             <li><a href="#" target="_blank" rel="noopener" class="footer-link">ISIM Enterprise ↗</a></li>
             <li><a href="#" target="_blank" rel="noopener" class="footer-link">ISIMx Learning Online ↗</a></li>
@@ -963,7 +944,7 @@
           </ul>
         </nav>
 
-        <!-- Connect & Legal -->
+        <!-- Connect -->
         <nav class="footer-col" aria-label="Connect">
           <h3 class="footer-heading">Connect</h3>
           <ul class="footer-list">
@@ -985,28 +966,26 @@
                 hello@soniadubeydewan.com
               </a>
             </li>
-
-            <!-- Legal Links moved here to save space -->
-            <li style="margin-top: 12px;">
-              <a href="/privacy" class="footer-link" style="font-size: 0.75rem; opacity: 0.5;">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="/terms" class="footer-link" style="font-size: 0.75rem; opacity: 0.5;">Terms of Use</a>
-            </li>
           </ul>
         </nav>
 
       </div>
 
-      <!-- BOTTOM: copyright -->
+      <!-- BOTTOM: Copyright & Legal -->
       <div class="footer-bottom">
 
         <p class="footer-copy">
           &copy; 2026 Sonia Dubey Dewan. All rights reserved.
         </p>
 
+        <div class="footer-legal-links">
+          <a href="/privacy" class="footer-link">Privacy Policy</a>
+          <span class="footer-legal-sep">·</span>
+          <a href="/terms" class="footer-link">Terms of Use</a>
+        </div>
+
         <p class="footer-credit">
-          Made with care · <span class="footer-credit-dot">●</span> Est. 2010
+          Made with care <span class="footer-credit-dot">●</span> Est. 2010
         </p>
 
       </div>
